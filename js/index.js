@@ -37,3 +37,8 @@ document.addEventListener("click", function() {
         menu.classList.remove('show');
     });
 });
+
+// BUTTON PANEL3
+
+const btnleft =document.querySelector('.iconos-left'),
+btnright=document.querySelector('.iconos-right')

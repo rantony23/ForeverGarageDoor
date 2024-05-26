@@ -29,3 +29,22 @@
 .panel3-img3{
     opacity: 0.2;
 }
+.iconos-left,
+.iconos-right{
+    display: flex;
+    position: relative;
+    display: block;
+    font-size: xx-large;
+    opacity: 0.8;
+    background-color: transparent;
+    font-weight:700;
+    cursor: pointer;
+    border: none;
+
+}
+.iconos-left{
+    left: 2%;
+}
+.iconos-right{
+    left: -2%;
+}
