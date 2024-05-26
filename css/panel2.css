@@ -1,0 +1,99 @@
+.panel2{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+}
+.panel2-img{
+    margin: 10px;
+}
+.grid-panel2{
+    width: 75%;
+    height: 100%;
+    padding: 2rem;
+}
+.panel2{
+    background-color: var(--white);
+}
+
+#panel30 button {
+    border: none;
+    box-shadow: 0 0 10px gray;
+    cursor: zoom-in;
+    display: block;
+    margin: 1rem auto;
+    max-width: 600px;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+}
+
+#panel30 img {
+    display: block;
+    max-height: 300px;
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    transition: transform .3s ease;
+}
+
+#panel30 button:hover img {
+    transform: scale(1.25);
+}
+
+#panel30 button:before {
+    background-color: gray;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity .3s ease;
+    width: 100%;
+    z-index: 1;
+}
+
+#panel30 button:hover:before {
+    opacity: .75;
+}
+
+#panel30 h4 {
+    bottom: 0;
+    color: var(--white);
+    display: block;
+    left: 50%;
+    margin: 0;
+    opacity: 0;
+    position: absolute;
+    transform: translate(-50%, 50%);
+    transition: bottom .3s ease, opacity .3s ease;
+    z-index: 2;
+}
+
+#panel30 button:hover h4 {
+    bottom: 30%;
+    opacity: 1;
+}
+
+#panel30 button:after {
+    content: url(assets/05189309db3a48edcbcc.svg);
+    left: 50%;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transform: translate(-40%, -50%);
+    transition: top .3s ease, opacity .3s ease;
+    width: 50%;
+    z-index: 2;
+}
+#panel30 button:hover:after {
+    opacity: .75;
+    top: 40%
+}
+
+
+
+
+
+
+
+

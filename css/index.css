@@ -1,0 +1,14 @@
+.background-first-panel{
+    background-image: url(../html/house-1836070_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    height:100vh;
+    color: white;
+    z-index: -1;
+}
+hr{
+    color: white;
+}
+body{
+    background-color:#f7fafa ;
+}

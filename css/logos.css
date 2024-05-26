@@ -1,0 +1,37 @@
+
+.logos-img-chi{
+    width: 143.5px;
+    height: 45px;
+}
+.logos-img-gds{
+    width: 234.5px;
+    height: 45px;
+}
+.logos-img-haas{
+    width: 97px;
+    height: 45px;
+}
+.logos-img-lift{
+    width: 190.5px;
+    height: 27.5px;
+    position: relative;
+    top: 9px;
+}
+.logos-img-raynor{
+    width: 187.5px;
+    height: 45px;
+}
+.logos-companies{
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@media(max-width:998px){
+    .logos-img-raynor,
+    .logos-img-lift,
+    .logos-img-gds{
+        display: none;
+    }
+}
