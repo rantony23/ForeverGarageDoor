@@ -23,15 +23,37 @@
 }
 .logos-companies{
     padding: 25px 0;
+}
+.ocultar{
+    width: 100%;
+}
+#logos-companies{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    width: 100%;
 }
+@media(max-width:900px){
+    .logos-companies{
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+    #logos-companies{
+        width: 250%;
+        display: flex;
+        position: relative;
 
-@media(max-width:998px){
-    .logos-img-raynor,
-    .logos-img-lift,
+    }
+    .logs{
+        padding: 0 20px; 
+    }
     .logos-img-gds{
-        display: none;
+        width: 234.5px;
+        height: 45px;
+    }
+    #logos-companies div{
+        overflow: hidden;
+        cursor: pointer;
     }
 }
