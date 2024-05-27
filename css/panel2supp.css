@@ -39,7 +39,7 @@
     transform: scale(1.25);
 }
 #panel30 button:before{
-    background-color: gray;
+    background-color: var(--second-color);
     content: "";
     height: 100%;
     left: 0;
@@ -56,7 +56,7 @@
 
 #panel30 h4 {
     bottom: 0;
-    color: var(--white);
+    color: var(--fifth-color);
     display: block;
     left: 50%;
     margin: 0;

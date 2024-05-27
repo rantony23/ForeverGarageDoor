@@ -40,5 +40,43 @@ document.addEventListener("click", function() {
 
 // BUTTON PANEL3
 
-const btnleft =document.querySelector('.iconos-left'),
-btnright=document.querySelector('.iconos-right')
+const btnleft =document.querySelector('.iconos-left');
+const btnright=document.querySelector('.iconos-right');
+
+const slider = document.getElementById('panel3');
+const images = document.querySelectorAll('.slider-button');
+
+btnleft.addEventListener("click",e => moveToLeft());
+btnright.addEventListener("click",e => moveToRight());
+let operacion=0;
+let widthImg = 300/images.length;
+let counter =0;
+
+function moveToRight(){
+    if(counter >=images.length-1){
+        operacion = 0;
+        counter=0;
+        slider.style.transform = `translate(-${operacion}%)`;
+        slider.style.transition = "all ease .6s"
+    }else{
+        counter++;
+        operacion = operacion + widthImg;
+        slider.style.transform = `translate(-${operacion}%)`;
+        slider.style.transition= "all ease .6s";
+    };
+}
+function moveToLeft(){
+    operacion = operacion- widthImg;
+    slider.style.transform = `translate(-${operacion}%)`;
+    slider.style.transition="all ease .6s";
+}
+
+// SLIDER IMG
+// script.js
+let esconder=document.querySelector(".text-panel1");
+window.addEventListener('load', function() {
+    setTimeout(function() {
+        esconder.style.opacity= "0";
+        document.querySelector('.sliding-div').classList.add('active');
+    }, 3000); // 3000 ms = 3 segundos
+});

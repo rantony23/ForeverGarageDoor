@@ -18,7 +18,7 @@
 
 #panel30 button {
     border: none;
-    box-shadow: 0 0 10px gray;
+    box-shadow: 0 0 10px var(--second-color);
     cursor: zoom-in;
     display: block;
     margin: 1rem auto;
@@ -40,7 +40,7 @@
 }
 
 #panel30 button:before {
-    background-color: gray;
+    background-color: var(--second-color);
     content: "";
     height: 100%;
     left: 0;

@@ -5,10 +5,19 @@
     height:100vh;
     color: white;
     z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items:center;
 }
 hr{
     color: white;
 }
 body{
     background-color:#f7fafa ;
+}
+.text-panel1{
+    display: block;
+    text-shadow: 2px 3px 5px black;
+    transition: all ease .3s;
+    color: var(--first-color);
 }

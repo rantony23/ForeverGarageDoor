@@ -1,0 +1,29 @@
+/* styles.css */
+
+.sliding-div {
+    width: 100%; /* Ajusta el tamaño según sea necesario */
+    height: 100vh;
+    background:var(--second-color);
+    opacity: .8;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    right: -100%; /* Empieza fuera de la pantalla */
+    transition: right 1s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.sliding-div.active {
+    right: 0;
+}
+.text2-panel1{
+    display: block;
+    color: var(--fifth-color);
+    transition: all ease .3s;
+    z-index: 1;
+    opacity: 1;
+    width: 60%;
+}

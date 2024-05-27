@@ -56,6 +56,9 @@
         background-color: var(--first-color);
         animation: aparecer 0.3s ease forwards;
     }
+    .dropdown-item:hover{
+        color: var(--fifth-color);
+    }
     @keyframes aparecer {
         from {
             opacity: 0;
@@ -121,5 +124,9 @@
         background-color: var(--first-color);
         padding: 0 3vw;
         font-weight: 600;
+    }
+    .dropdown-item:hover,
+    .nav-link:hover{
+        color: var(--fifth-color);
     }
 }
