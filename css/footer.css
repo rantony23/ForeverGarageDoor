@@ -1,55 +1,51 @@
 
-  .footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  
-  .footer h3 {
-    color: #fff;
-  }
-  
-<<<<<<< HEAD
-  /* lo que yo quiera  */
-=======
-  .footer p {
-    margin: 0;
-    padding: 5px 0;
-  }
-  
-  .container-footer {
-    max-width: 1140px;
-    margin: 0 auto;
-    padding: 0 15px;
-  }
-  
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-  }
-  
-  .col-md-4 {
-    flex: 0 0 33.333333%;
-    max-width: 33.333333%;
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-  
-  .social-media {
-    margin-top: 20px;
-    width: 100%;
-  }
-  .redes-col{
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.footer h3 {
+  color: #fff;
+}
+
+.footer p {
+  margin: 0;
+  padding: 5px 0;
+}
+
+.container-footer {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-md-4 {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.social-media {
+  margin-top: 20px;
+  width: 100%;
+}
+.redes-col{
+  padding: 0;
+  width: 100%;
+}
+@media(max-width:700px){
+  #Residential{
     padding: 0;
-    width: 100%;
   }
-  @media(max-width:700px){
-    #Residential{
-      padding: 0;
-    }
-  }
->>>>>>> e11f2f0006678d10c1a4412d2f52d009b0ef3852
+}
