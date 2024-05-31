@@ -46,12 +46,13 @@
 }
 .div-img1{
   display: block;
-  width: 40%;
+  width: 750px;
 }
 .primera-parte{
   display: flex;
   justify-content: center;
-  gap: 5rem;
+  gap: 3rem;
+  width: 100%;
 }
 .button-get-quote{
   display: inline-block;
@@ -210,6 +211,9 @@
       width: 128px;
       border-radius: 1.5rem;
     }
+    .residential-1-img{
+      width: 128px;
+    }
   }
   
   /* For medium devices */
@@ -222,6 +226,7 @@
       width: 228px;
       border-radius: 1.5rem;
     }
+    
   }
   
   /* For large devices */
@@ -249,3 +254,33 @@
       --small-font-size: .875rem;
     }
   }
+  
+ @media(max-width:698px){
+  .residential-1-img{
+    width: 300px;
+  }
+  .primera-parte{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .div-texto1{
+    width: 270px;
+  }
+  .div-img1{
+    display: flex;
+    justify-content: center;
+  }
+  .titulo-contenedor{
+    width: 90%;
+    margin-top: 100px;
+  }
+  .residential-container2{
+    display: flex;
+    justify-content: center;
+  }
+  .card__article{
+    display: flex;
+    justify-content: center;
+  }
+ } 
