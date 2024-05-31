@@ -129,4 +129,16 @@
     .nav-link:hover{
         color: var(--fifth-color);
     }
+    .barra-nav,
+    .navbar{
+        padding: 0;
+        width: 100%;
+  }
+  .dropdown-menu{
+    width: 100%;
+  }
+  .barra-nav{
+    width:100%;
+  }
+
 }
