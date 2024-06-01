@@ -36,6 +36,15 @@ body {
 #Residential{
   margin-top: 4px;
   padding-top: 100px; 
+  background: red;
+  padding-left: 0;
+  padding-right:0 ;
+}
+.amarillo{
+  background-color: yellow;
+  height: 80%;
+  width: 100%;
+  padding: 0;
 }
 .div-texto1{
 display: block;
