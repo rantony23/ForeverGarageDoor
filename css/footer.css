@@ -50,8 +50,14 @@
 .fa-brands{
   margin: 0 10px;
 }
+.container{
+  height: 25vh;
+}
 @media(max-width:700px){
   #Residential{
     padding: 0;
+  }
+  .container{
+    height: 30vh;
   }
 }
