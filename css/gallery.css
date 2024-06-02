@@ -1,0 +1,29 @@
+
+#Gallery{
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+}
+.imagen-gallery{
+    display: flex;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    padding: 15px;
+    border-radius: 2.5rem;
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+.imagen-gallery:hover{
+    transform: scale(1.1);
+}
+.container-grid-gallery{
+    width: 80%;
+}
+.titulo-galeria{
+    font-size: 70px;
+}

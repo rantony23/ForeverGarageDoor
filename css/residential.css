@@ -86,7 +86,6 @@ body {
 .button-get-quote{
 display: inline-block;
 padding: 0;
-border: 5px;
 text-align: center;
 background-color:var(--second-color) ;
 text-decoration: none;
