@@ -21,6 +21,13 @@
   padding: 0;
   margin: 0;
 }
+/* @font-face{
+  font-family: 'THUNDER';
+  src: url('fonts/THUNDER-Regular.woff2') format('woff2'),
+       url('fonts/THUNDER-Regular.woff') format('woff');
+       font-weight: normal;
+       font-style: normal;
+} */
 
 body {
   font-family: var(--body-font);
@@ -28,56 +35,75 @@ body {
   color: var(--text-color);
 }
 .titulo-contenedor{
+  position: relative;
+  left: 5%;
+  z-index: 1;
+}
+.titulo-residential{
+  font-size: 10vw;
+  font-style: italic;
+  color: var(--second-color);
+}
+#Residential{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 2rem;
-}
-#Residential{
-  margin-top: 4px;
-  padding-top: 100px; 
-  background: red;
+  border-bottom: 1px solid black;
+  width: 100%;
+  height: 70vh;
   padding-left: 0;
-  padding-right:0 ;
+  padding-right: 0;
 }
 .amarillo{
-  background-color: yellow;
-  height: 80%;
-  width: 100%;
-  padding: 0;
+  background-image: url(../img/residential/FONDO\ COMERCIAL\ .png);
+  width: 200%;
+  height: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .div-texto1{
-display: block;
-width: 30rem;
-display: flex;
-justify-content: center;
-flex-wrap: wrap;
+  display: block;
+  width: 80%;
+  font-size: small;
 }
 .div-img1{
-display: block;
-width: 750px;
+  height: 100%;
+  width: 25%;
+  position: relative;
+  top: 9%;
+  left: -5%;
+
 }
-.primera-parte{
-display: flex;
-justify-content: center;
-gap: 3rem;
-width: 100%;
+
+.residential-1-img {
+  height: 100%;
+  width: 100%;
 }
+
+
+
 .button-get-quote{
 display: inline-block;
 padding: 0;
 border: 5px;
 text-align: center;
-background-color:var(--third-color) ;
+background-color:var(--second-color) ;
 text-decoration: none;
 border-radius: 5rem;
 display: flex;
 align-items: center;
 justify-content: center;
-color: black;
+color: var(--white-color);
 font-size: large;
 width: 130px;
 height: 50px;
+position: relative;
+left: 40%;
+transition: all ease 0.3s;
+}
+.button-get-quote:hover{
+  background-color: var(--third-color);
 }
 .residential-container2{
   display: grid;
@@ -86,12 +112,6 @@ height: 50px;
   padding-block: 5rem;
   justify-content: center;
 
-}
-.residential-1-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  border-radius: 1.5rem;
 }
 .card__container {
   display: grid;
