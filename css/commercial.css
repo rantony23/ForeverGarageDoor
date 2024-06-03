@@ -21,13 +21,15 @@
   padding: 0;
   margin: 0;
 }
-/* @font-face{
+@font-face{
   font-family: 'THUNDER';
   src: url('fonts/THUNDER-Regular.woff2') format('woff2'),
        url('fonts/THUNDER-Regular.woff') format('woff');
        font-weight: normal;
        font-style: normal;
-} */
+       font-family: 'thunder';
+       src: url(../fonts/Thunder-BoldHCItalic.woff2);
+}
 
 body {
   font-family: var(--body-font);
@@ -36,43 +38,46 @@ body {
 }
 .titulo-contenedor{
   position: relative;
-  left: 5%;
+  left: 10%;
   z-index: 1;
+  top: 10%;
 }
 .titulo-residential{
-  font-size: 10vw;
-  font-style: italic;
-  color: var(--second-color);
+  font-size: 1300%;
+  color: var(--first-color);
+  font: 668 250px 'thunder' ;
 }
 #Residential{
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid black;
   width: 100%;
-  height: 70vh;
+  height: 80vh;
   padding-left: 0;
   padding-right: 0;
+  margin-bottom: 200px;
 }
 .amarillo{
   background-image: url(../img/residential/FONDO\ COMERCIAL\ .png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   width: 200%;
-  height: 85%;
+  height: 140%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .div-texto1{
   display: block;
-  width: 80%;
+  width: 60%;
   font-size: small;
 }
 .div-img1{
-  height: 100%;
-  width: 25%;
+  height: 80%;
   position: relative;
-  top: 9%;
-  left: -5%;
+  top: 15%;
+  left: -10%;
 
 }
 
@@ -99,6 +104,7 @@ font-size: large;
 width: 130px;
 height: 50px;
 position: relative;
+top: 10vh;
 left: 40%;
 transition: all ease 0.3s;
 }
@@ -121,7 +127,7 @@ transition: all ease 0.3s;
 .card__article {
   position: relative;
   overflow: hidden;
-  padding: 0 45.5px;
+  padding: 0 35.5px;
 }
 
 .card__img {
