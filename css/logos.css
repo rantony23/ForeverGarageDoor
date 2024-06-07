@@ -33,7 +33,7 @@
     align-items: center;
     width: 100%;
 }
-@media(max-width:900px){
+@media(max-width:1200px){
     .logos-companies{
         width: 100%;
         overflow: hidden;
@@ -55,5 +55,9 @@
     #logos-companies div{
         overflow: hidden;
         cursor: pointer;
+    }
+    .logos-img-lift{
+        height:28px;
+        top: 0;
     }
 }
