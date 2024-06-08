@@ -157,14 +157,16 @@
 
   <section class="form-register">
     <h4>Get Estimate</h4>
-    <form  onsubmit="emailSend(); reset(); return false;">
-        <input class="controls" type="text" name="name" id="name" placeholder="Name" required>
-        <input class="controls" type="text" name="Lastname" id="Lastname" placeholder="Lastname" required>
-        <input class="controls" type="email" name="Email" id="Email" placeholder="Email" required>
-        <input class="controls" type="number" name="Phone Number" id="Phone-number" placeholder="Phone Number" required>
-        <button class="controls button" type="submit" value="submit">Submit</button>
-    </form>
-  </section>
+    <form id="form" action="/send" method="post">
+      <input class="controls" type="text" name="name" id="name" placeholder="Name" required>
+      <input class="controls" type="text" name="lastname" id="lastname" placeholder="Lastname" required>
+      <input class="controls" type="email" name="email" id="email" placeholder="Email" required>
+      <input class="controls" type="tel" name="phone" id="phone" placeholder="Phone Number" required>
+      <textarea class="controls" name="message" id="message" placeholder="Message" cols="30" rows="10"></textarea>
+      <button class="controls button" type="submit">Submit</button>
+  </form>
+</section>
+
 
   <footer class="footer">
     <h6 class="logo-footer"><svg version="1.1" id="Default" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"

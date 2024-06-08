@@ -1,13 +1,23 @@
-function emailSend(){
-    Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "rantony52@gmail.com",
-        Password : "4E3E2CCCADC8AC47A9B8F238206912BB1E62",
-        To : 'osornioandradea@gmail.com',
-        From : "rantony52@gmail.com",
-        Subject : "This is the subject",
-        Body : "And this is the body"
-    }).then(
-      message => alert(message)
-    );
-}
+document.querySelector('#form').addEventListener('submit', function(event) {
+  event.preventDefault();
+  
+  const formData = new FormData(this);
+  const data = {
+      name: formData.get('name'),
+      lastname: formData.get('lastname'),
+      email: formData.get('email'),
+      phone: formData.get('phone'),
+      message: formData.get('message')
+  };
+
+  fetch('http://localhost:3000/send', {
+      method: 'POST',
+      headers: {
+          'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+  })
+  .then(response => response.text())
+  .then(result => alert(result))
+  .catch(error => console.error('Error:', error));
+});
