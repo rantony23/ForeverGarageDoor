@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/gallery.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <title>Forever Garage Doors</title>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -150,7 +155,7 @@
     </div>
   </nav>
   <!-- Section de la galeria -->
-  <section id="Gallery" class="container-fluid">
+  <!-- <section id="Gallery" class="container-fluid">
     <div class="contenedor-grid">
       <div class="elemento1 same"></div>
       <div class="elemento2 same"></div>
@@ -162,7 +167,42 @@
       <div class="elemento8 same"></div>
     </div>
 
-  </section>
+  </section> -->
+
+  <!-- seccion de la galeria swiper modal -->
+  <section id="Gallery" class="container-fluid">
+    <div class="contenedor-grid">
+        <div class="elemento1 same" data-index="0"></div>
+        <div class="elemento2 same" data-index="1"></div>
+        <div class="elemento3 same" data-index="2"></div>
+        <div class="elemento4 same" data-index="3"></div>
+        <div class="elemento5 same" data-index="4"></div>
+        <div class="elemento6 same" data-index="5"></div>
+        <div class="elemento7 same" data-index="6"></div>
+        <div class="elemento8 same" data-index="7"></div>
+    </div>
+
+    <!-- Swiper Modal -->
+    <div class="swiper-container" id="swiperModal" style="display: none;">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="../img/Gallery/1.png" alt="Image 1" /></div>
+            <div class="swiper-slide"><img src="../img/Gallery/2.png" alt="Image 2" /></div>
+            <div class="swiper-slide"><img src="../img/Gallery/3.png" alt="Image 3" /></div>
+            <div class="swiper-slide"><img src="../img/Gallery/4.png" alt="Image 4" /></div>
+            <div class="swiper-slide"><img src="../img/Gallery/5.png" alt="Image 5" /></div>
+            <div class="swiper-slide"><img src="../img/Gallery/6.png" alt="Image 6" /></div>
+            <div class="swiper-slide"><img src="../img/Gallery/7.png" alt="Image 7" /></div>
+            <div class="swiper-slide"><img src="../img/Gallery/8.png" alt="Image 8" /></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Navigation -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <!-- Add Exit Button -->
+        <button class="exit-button" id="exitButton">X</button>
+    </div>
+</section>
 
   <!-- FOOTER SECTION -->
 
@@ -540,5 +580,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
     crossorigin="anonymous"></script>
+<<<<<<< HEAD
+=======
+    <script src="../js/index.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+    crossorigin="anonymous"></script>
+    <script src="../js/Gallery.js"></script>
+>>>>>>> a74a8add6a2ce285f23ecf75b8cb1d722c4096f9
 </body>
 </html
