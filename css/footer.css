@@ -12,7 +12,7 @@
 }
 @media(max-width:700px){
   .footer{
-    height: 65vh;
+    height: 105vh;
     padding-bottom: 550px;
     display: grid;
     justify-items: center;
