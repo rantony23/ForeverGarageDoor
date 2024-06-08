@@ -248,3 +248,49 @@
         grid-column: 1;
     }
 }
+
+/* Swiper Modal Styles */
+#swiperModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#swiperModal .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#swiperModal .swiper-slide img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #fff;
+}
+
+/* Exit Button Styles */
+.exit-button {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background: #fff;
+    color: #000;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: .9rem;
+    cursor: pointer;
+    z-index: 1100; /* Higher than the modal */
+}
