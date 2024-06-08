@@ -31,14 +31,14 @@
     }
     .login-button{
         text-decoration: none;
-        border:2px; 
-        border-radius: 20%;
+        border:1px; 
+        border-radius: 5%;
         color: var(--second-color);
         padding: 5px 10px;
         transition: ease 0.3s;
     }
     .login-button:hover{
-        background-color: var(--third-color);
+        background-color: var(--fifth-color);
         color: black;
     }
     .phone-number{
@@ -59,6 +59,10 @@
     }
     .dropdown-item:hover{
         color: var(--fifth-color);
+    }
+
+    .dropdown-menu .dropdown-item:active{
+        background-color: var(--first-color) !important;
     }
     @keyframes aparecer {
         from {
@@ -141,5 +145,8 @@
   .barra-nav{
     width:100%;
   }
+  .dropdown-menu .dropdown-item:active{
+    background-color: var(--first-color) !important;
+}
 
 }

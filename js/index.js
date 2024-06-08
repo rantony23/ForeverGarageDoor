@@ -54,7 +54,7 @@ setInterval(()=>{
 },5000);
 
 let operacion=0;
-let widthImg = 300/images.length;
+let widthImg = 600/images.length;
 let counter =0;
 
 function moveToRight(){

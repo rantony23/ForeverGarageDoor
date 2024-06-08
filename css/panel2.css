@@ -1,45 +1,88 @@
-.panel2{
-    width: 100%;
-    height: 100vh;
+#panel2{
     display: grid;
+    width: 100%;
+    height: 200vh;
+    grid-template-columns:50% 50%;
+    grid-template-rows: 50% 50%;
+    justify-content: center;
     align-items: center;
+    padding: 25px 5%;
+    gap: 10px ;
+    margin-bottom: 25px;
 }
-.panel2-img{
-    margin: 10px;
-}
-.grid-panel2{
-    width: 75%;
+.poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    }
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+      font-family: 'Poppins';
+      }
+.btm1{
+    display: block;
+    width: 100%;
     height: 100%;
-    padding: 2rem;
+    grid-column: 1;
+    grid-row: 1;
+    background-image: url(../img/logos/panel2-img/RESIDENTIAL.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.panel2{
-    background-color: var(--white);
-}
-
-#panel30 button {
-    border: none;
-    box-shadow: 0 0 10px var(--second-color);
-    cursor: zoom-in;
+.btm2{
     display: block;
-    margin: 1rem auto;
-    max-width: 600px;
+    width: 100%;
+    height: 100%;
+    grid-column: 2;
+    grid-row: 1;
+    background-image: url(../img/logos/panel2-img/COMMERCIAL.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.btm3{
+    display: block;
+    width: 100%;
+    height: 100%;
+    grid-column: 1;
+    grid-row: 2;
+    background-image: url(../img/logos/panel2-img/OPENERS.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.btm4{
+    display: block;
+    width: 100%;
+    height: 100%;
+    grid-column: 2;
+    grid-row: 2;
+    background-image: url(../img/logos/panel2-img/REPAIRS.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#panel2 a{
+    display: block;
+    border:none;
     overflow: hidden;
-    padding: 0;
     position: relative;
+    padding: 0;
+    width: 100%;
 }
-
-#panel30 img {
-    display: block;
-    max-height: 300px;
-    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
-    transition: transform .3s ease;
-}
-
-#panel30 button:hover img {
+#panel2 a:hover div{
     transform: scale(1.25);
 }
-
-#panel30 button:before {
+#panel2 div{
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform .3s ease;
+}
+#panel2 a:before{
     background-color: var(--second-color);
     content: "";
     height: 100%;
@@ -47,18 +90,17 @@
     opacity: 0;
     position: absolute;
     top: 0;
-    transition: opacity .3s ease;
+    transform: opacity .3s ease;
     width: 100%;
     z-index: 1;
 }
-
-#panel30 button:hover:before {
+#panel2 a:hover:before {
     opacity: .75;
 }
 
-#panel30 h4 {
+#panel2 h4 {
     bottom: 0;
-    color: var(--white);
+    color: var(--fifth-color);
     display: block;
     left: 50%;
     margin: 0;
@@ -69,13 +111,13 @@
     z-index: 2;
 }
 
-#panel30 button:hover h4 {
-    bottom: 30%;
+#panel2 a:hover h4 {
+    bottom: 50%;
     opacity: 1;
 }
 
-#panel30 button:after {
-    content: url(assets/05189309db3a48edcbcc.svg);
+#panel2 a:after {
+    content: "";
     left: 50%;
     opacity: 0;
     position: absolute;
@@ -85,15 +127,67 @@
     width: 50%;
     z-index: 2;
 }
-#panel30 button:hover:after {
+#panel2 a:hover:after {
     opacity: .75;
     top: 40%
 }
 
-
-
-
-
-
+@media (max-width:700px){
+    #panel2{
+        display: grid;
+        width: 100%;
+        height:200vh;
+        grid-template-columns:1fr;
+        grid-template-rows: 25% 25% 25% 25%;
+        justify-content: center;
+        align-items: center;
+        padding: 10% 5%;
+        gap: 10px ;
+    }
+    .btm1{
+        display: block;
+        width: 100%;
+        height: 100%;
+        grid-column: 1;
+        grid-row: 1;
+        background-image: url(../img/logos/panel2-img/RESIDENTIAL.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .btm2{
+        display: block;
+        width: 100%;
+        height: 100%;
+        grid-column: 1;
+        grid-row: 2;
+        background-image: url(../img/logos/panel2-img/COMMERCIAL.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .btm3{
+        display: block;
+        width: 100%;
+        height: 100%;
+        grid-column: 1;
+        grid-row: 3;
+        background-image: url(../img/logos/panel2-img/OPENERS.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .btm4{
+        display: block;
+        width: 100%;
+        height: 100%;
+        grid-column: 1;
+        grid-row: 4;
+        background-image: url(../img/logos/panel2-img/REPAIRS.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
 
 
