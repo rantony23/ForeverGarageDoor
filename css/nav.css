@@ -74,7 +74,7 @@
     }
     .dropdown-menu-full1{
         width: 101vw;
-        left: 230px;
+        left: 260px;
         transform: translateX(-52%);  
         border:0;
         padding: 15px 3.7vw;
@@ -83,7 +83,7 @@
     }
     .dropdown-menu-full2{
         width: 101vw;
-        left: 119px;
+        left: 145px;
         transform: translateX(-52%);
         border:0;
         padding: 15px 3.7vw;
@@ -101,7 +101,7 @@
     }
      .dropdown-menu-full5{
         width: 101vw;
-        left: -153px;
+        left: -130px;
         transform: translateX(-52%);
         border:0;
         padding: 15px 3.7vw;

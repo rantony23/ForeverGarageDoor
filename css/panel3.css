@@ -71,7 +71,7 @@
 .iconos-right{
     left:97%;
 }
-@media(max-width:700px){
+@media(max-width:1000px){
     .background-third-panel{
         background-image: white;
         width: 80%;
