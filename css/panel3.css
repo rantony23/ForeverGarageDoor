@@ -30,7 +30,7 @@
     position: relative;
     width: 100%;
 }
-#panel3 button{
+#panel3 h4{
     display: block;
     max-height: 70vh;
     border: 10px;
@@ -93,7 +93,7 @@
         position: relative;
         width: 100%;
     }
-    #panel3 button{
+    #panel3 h4{
         display: block;
         height: 40vh;
         width: 25vw;
